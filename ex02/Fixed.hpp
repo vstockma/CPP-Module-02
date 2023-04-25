@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:17:56 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/25 14:41:04 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/04/25 15:33:32 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Fixed
     public:
         Fixed();
         Fixed(const Fixed& copy);
-        Fixed &operator=(const Fixed& original);
+        Fixed& operator=(const Fixed& original);
         ~Fixed();
         int getRawBits(void) const;
         void setRawBits(int const raw);
@@ -43,7 +43,6 @@ class Fixed
         static const Fixed& min(const Fixed& num1, const Fixed& num2);
         static const Fixed& max(const Fixed& num1, const Fixed& num2);
 
-        Fixed& operator=(const Fixed& copy);
         Fixed operator+(const Fixed& copy);
         Fixed operator-(const Fixed& copy);
         Fixed operator/(const Fixed& copy);
