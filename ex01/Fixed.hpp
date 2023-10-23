@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 11:01:13 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/25 13:49:56 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:11:45 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 class Fixed
 {
     private:
-        int fixed_value;
-        static const int bits = 8;
+        int _fixed_value;
+        static const int _bits = 8;
 
     public:
         Fixed();

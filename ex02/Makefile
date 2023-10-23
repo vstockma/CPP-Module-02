@@ -6,7 +6,7 @@
 #    By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/25 14:17:59 by vstockma          #+#    #+#              #
-#    Updated: 2023/04/25 14:18:09 by vstockma         ###   ########.fr        #
+#    Updated: 2023/10/17 14:18:24 by vstockma         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,16 +16,16 @@ SRC = main.cpp Fixed.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
-CC = g++
+CXX = c++
 
 RM = rm -f
 
-FLAGS = -g -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -g -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+	$(CXX) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) $(OBJ)

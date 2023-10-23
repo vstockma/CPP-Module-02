@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 11:00:27 by vstockma          #+#    #+#             */
-/*   Updated: 2023/04/25 14:02:10 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/19 14:22:21 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int main()
 {
     Fixed a;
     Fixed const b( 10 );
-    Fixed const c( 42.42f );
+    Fixed const c( -42.42f );
     Fixed const d( b );
 
     a = Fixed( 1234.4321f );
