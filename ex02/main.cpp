@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:17:37 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/19 11:45:17 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/23 12:24:35 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,17 @@ int main()
     
     std::cout << Fixed::min( a, b ) << std::endl;
 
+    // std::cout << std::boolalpha << "c > d is " << (c > d) << std::endl;
+    // std::cout << std::boolalpha << "c < d is " << (c < d) << std::endl;
+    // std::cout << std::boolalpha << "c >= d is " << (c >= d) << std::endl;
+    // std::cout << std::boolalpha << "c <= d is " << (c <= d) << std::endl;
+    // std::cout << std::boolalpha << "c == d is " << (c == d) << std::endl;
+    // std::cout << std::boolalpha << "c != d is " << (c != d) << std::endl;
+    // std::cout << "c + d is " << (c + d) << std::endl;
+    // std::cout << "c - d is " << (c - d) << std::endl;
+    // std::cout << "c * d is " << (c * d) << std::endl;
+    // std::cout << "c / d is " << (c / d) << std::endl;
+    // std::cout << Fixed::min(c,d) << std::endl;
+    // std::cout << Fixed::max(c,d) << std::endl;
     return (0);
 }

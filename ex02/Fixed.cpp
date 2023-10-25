@@ -6,7 +6,7 @@
 /*   By: vstockma <vstockma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 14:17:52 by vstockma          #+#    #+#             */
-/*   Updated: 2023/10/19 11:25:04 by vstockma         ###   ########.fr       */
+/*   Updated: 2023/10/23 12:49:51 by vstockma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,60 +68,60 @@ std::ostream& operator<<(std::ostream& os, const Fixed& fixed)
     return os;
 }
 
-bool Fixed::operator>(const Fixed& copy)
+bool Fixed::operator>(const Fixed& r_arg)
 {
-    return (_fixed_value > copy._fixed_value);
+    return (_fixed_value > r_arg._fixed_value);
 }
 
-bool Fixed::operator<(const Fixed& copy)
+bool Fixed::operator<(const Fixed& r_arg)
 {
-    return (_fixed_value < copy._fixed_value);
+    return (_fixed_value < r_arg._fixed_value);
 }
 
-bool Fixed::operator>=(const Fixed& copy)
+bool Fixed::operator>=(const Fixed& r_arg)
 {
-    return (_fixed_value >= copy._fixed_value);
+    return (_fixed_value >= r_arg._fixed_value);
 }
 
-bool Fixed::operator<=(const Fixed& copy)
+bool Fixed::operator<=(const Fixed& r_arg)
 {
-    return (_fixed_value <= copy._fixed_value);
+    return (_fixed_value <= r_arg._fixed_value);
 }
 
-bool Fixed::operator!=(const Fixed& copy)
+bool Fixed::operator!=(const Fixed& r_arg)
 {
-    return (_fixed_value != copy._fixed_value);
+    return (_fixed_value != r_arg._fixed_value);
 }
 
-bool Fixed::operator==(const Fixed& copy)
+bool Fixed::operator==(const Fixed& r_arg)
 {
-    return (_fixed_value == copy._fixed_value);
+    return (_fixed_value == r_arg._fixed_value);
 }
 
-Fixed Fixed::operator+(const Fixed& copy)
+Fixed Fixed::operator+(const Fixed& r_arg)
 {
     Fixed fixed;
-    fixed._fixed_value = this->_fixed_value + copy._fixed_value;
+    fixed._fixed_value = this->_fixed_value + r_arg._fixed_value;
     return (fixed);
 }
 
-Fixed Fixed::operator-(const Fixed& copy)
+Fixed Fixed::operator-(const Fixed& r_arg)
 {
     Fixed fixed;
-    fixed._fixed_value = this->_fixed_value - copy._fixed_value;
+    fixed._fixed_value = this->_fixed_value - r_arg._fixed_value;
     return (fixed);
 }
 
-Fixed Fixed::operator/(const Fixed& copy)
+Fixed Fixed::operator/(const Fixed& r_arg)
 {
     Fixed fixed;
-    fixed._fixed_value = this->_fixed_value / copy._fixed_value;
+    fixed._fixed_value = this->_fixed_value / r_arg._fixed_value;
     return (fixed);
 }
 
-Fixed Fixed::operator*(const Fixed& copy)
+Fixed Fixed::operator*(const Fixed& r_arg)
 {
-    return (Fixed (toFloat() * copy.toFloat()));
+    return (Fixed (toFloat() * r_arg.toFloat()));
 }
 
 Fixed Fixed::operator++(void)
